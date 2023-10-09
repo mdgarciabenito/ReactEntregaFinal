@@ -4,13 +4,15 @@ import { getItemById } from '../../Helpers/Items'
 
 const Item = () => {
     const { itemId } = useParams()
-    const product = getItemById(itemId)
+    const numericItemId = parseInt(itemId, 10);
+    const product = getItemById(numericItemId)
+
     return (
         <>
         <div style={{display:"flex", flexDirection:"row", justifyContent:"center"}}>
             {/* <img src={product.url} alt={product.title} /> */}
             <div>
-                <h2>Item: {product.title}</h2>
+                <h2>{product.title} ${product.precio}</h2>
             </div>
 
         </div>
