@@ -1,6 +1,7 @@
 import React from 'react'
 import { useParams } from 'react-router-dom'
 import { getItemById } from '../../Helpers/Items'
+import Contador from '../Contador/Contador'
 
 const Item = () => {
     const { itemId } = useParams()
@@ -16,6 +17,7 @@ const Item = () => {
                 />}
                 <div>
                     <h2>{product.title} ${product.precio}</h2>
+                    <Contador initial={1} onAdd={(quantity) => console.log("Cantidad agregada: ", quantity)} />
                 </div>
 
             </div>
