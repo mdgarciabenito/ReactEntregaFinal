@@ -16,8 +16,8 @@ function NavBar() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link as={Link} to="/Ropa" >Ropa</Nav.Link>
-            <Nav.Link as={Link} to="/Tazas" >Tazas</Nav.Link>
+            <Nav.Link as={Link} to="/Cart" >Carrito</Nav.Link>
+            <Nav.Link as={Link} to="/Products" >Productos</Nav.Link>
             <Nav.Link as={Link} to="/Varios" >Varios</Nav.Link>
           </Nav>
         </Navbar>
