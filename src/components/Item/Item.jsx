@@ -9,13 +9,16 @@ const Item = () => {
 
     return (
         <>
-        <div style={{display:"flex", flexDirection:"row", justifyContent:"center"}}>
-            {/* <img src={product.url} alt={product.title} /> */}
-            <div>
-                <h2>{product.title} ${product.precio}</h2>
-            </div>
+            <div style={{ display: "flex", flexDirection: "row", justifyContent: "center" }}>
+                {<img src={product.url} alt={product.title}
+                    width={200}
+                    height={200}
+                />}
+                <div>
+                    <h2>{product.title} ${product.precio}</h2>
+                </div>
 
-        </div>
+            </div>
         </>
     )
 }

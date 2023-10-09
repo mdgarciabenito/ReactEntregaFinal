@@ -9,12 +9,14 @@ const Varios = () => {
     <>
       <div
         style={{
-          display: "flex",
-          flexDirection: "row",
-          justifyContent: "center",
+          textAlign: "center"
         }}
       >
         <h2>Varios</h2>
+        <img src="/Images/hoppis.png" alt="hoppis"
+          height={200}
+          width={200}
+        />
       </div>
       {variosItems.map((item) => {
         return (
@@ -25,7 +27,7 @@ const Varios = () => {
               justifyContent: "center",
             }}
           >
-            <Link to={`/products/${item.id}`}>{item.title}</Link>
+            <Link to={`/Categorias/${item.id}`}>{item.title}</Link>
           </div>
         );
       })}

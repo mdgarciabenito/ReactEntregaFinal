@@ -2,19 +2,21 @@ import { Link } from "react-router-dom";
 import { items } from "../../Helpers/Items.js";
 
 const Ropa = () => {
-    // Filtrar los elementos con la categoría "Ropa"
+    // Filtra los elementos con la categoría "Ropa"
     const ropaItems = items.filter((item) => item.categoría === "Ropa");
 
     return (
         <>
             <div
                 style={{
-                    display: "flex",
-                    flexDirection: "row",
-                    justifyContent: "center",
+                    textAlign: "center"
                 }}
             >
                 <h2>Ropa</h2>
+                <img src="/Images/remeras.png" alt="remeras"
+                    height={200}
+                    width={200}
+                />
             </div>
             {ropaItems.map((item) => {
                 return (
@@ -25,7 +27,7 @@ const Ropa = () => {
                             justifyContent: "center",
                         }}
                     >
-                        <Link to={`/products/${item.id}`}>{item.title}</Link>
+                        <Link to={`/Categorias/${item.id}`}>{item.title}</Link>
                     </div>
                 );
             })}

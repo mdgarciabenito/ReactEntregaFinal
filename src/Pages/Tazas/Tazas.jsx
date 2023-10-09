@@ -2,19 +2,21 @@ import { Link } from "react-router-dom";
 import { items } from "../../Helpers/Items.js";
 
 const Tazas = () => {
-    // Filtrar los elementos con la categoría "Ropa"
+    // Filtra los elementos con la categoría "Tazas"
     const tazaItems = items.filter((item) => item.categoría === "Taza");
 
     return (
         <>
             <div
                 style={{
-                    display: "flex",
-                    flexDirection: "row",
-                    justifyContent: "center",
+                    textAlign: "center"
                 }}
             >
                 <h2>Tazas</h2>
+                <img src="/Images/tazas magicas.png" alt="tazas"
+                    height={200}
+                    width={200}
+                />
             </div>
             {tazaItems.map((item) => {
                 return (
@@ -25,7 +27,7 @@ const Tazas = () => {
                             justifyContent: "center",
                         }}
                     >
-                        <Link to={`/products/${item.id}`}>{item.title}</Link>
+                        <Link to={`/Categorias/${item.id}`}>{item.title}</Link>
                     </div>
                 );
             })}
