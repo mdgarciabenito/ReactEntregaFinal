@@ -1,18 +1,18 @@
 import { Link } from 'react-router-dom'
 import { items } from "../../Helpers/Items.js"
 
-const Categorias = () => {
+const ItemListContainer = () => {
 
   return (
     <>
       <div style={{ display: "flex", flexDirection: "row", justifyContent: "center" }}>
-        <h2>Categorías</h2>
+        <h2>Productos</h2>
       </div>
       {
         items.map((item) => {
           return (
-            <div style={{ display: "flex", flexDirection: "row", justifyContent: "center" }}>
-              <Link to={`/Categorias/${item.id}`}>{item.title}</Link>
+            <div key={item.id} style={{ display: "flex", flexDirection: "row", justifyContent: "center" }}>
+              <Link to={`/ItemListContainer/${item.id}`}>{item.title}</Link>
             </div>
           )
         })
@@ -22,4 +22,4 @@ const Categorias = () => {
   )
 }
 
-export default Categorias
+export default ItemListContainer

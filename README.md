@@ -1,70 +1,46 @@
-# Getting Started with Create React App
+# E-commerce de Sublimación de Ropa
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este es un proyecto de e-commerce de sublimación de ropa desarrollado con React, Bootstrap y Firebase. Permite a los usuarios explorar una variedad de productos de ropa personalizada, agregar productos a su carrito y realizar compras en línea.
 
-## Available Scripts
+## Funcionalidades clave
 
-In the project directory, you can run:
+- Exploración de productos: Los usuarios pueden ver una lista de productos de sublimación de ropa disponibles.
+- Carrito de compras: Los usuarios pueden agregar productos al carrito de compras y gestionar los elementos que desean comprar.
 
-### `npm start`
+## Tecnologías utilizadas
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **React**: Se utiliza para construir la interfaz de usuario de la aplicación.
+- **Bootstrap**: Proporciona un diseño responsivo y estilos predefinidos para una apariencia atractiva.
+- **Firebase**: Se utiliza para el almacenamiento de datos en tiempo real, la autenticación de usuarios y la gestión de pedidos.
+- **Otras bibliotecas y herramientas de React**: react-router-dom /
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Instalación
 
-### `npm test`
+1. Clona este repositorio en tu máquina local.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+bash
+git clone https://github.com/mdgarciabenito/ReactEntregaFinal.git
 
-### `npm run build`
+Instala las dependencias.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+npm install
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Configura Firebase: Crea un proyecto en Firebase (si aún no lo has hecho) y configura las credenciales en tu aplicación. Puedes seguir la documentación de Firebase para obtener más detalles.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2. Inicia la aplicación.
 
-### `npm run eject`
+npm start
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+La aplicación debería estar disponible en http://localhost:3000.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Si deseas contribuir a este proyecto, siéntete libre de hacer un fork y enviar solicitudes de extracción. Agradecemos cualquier contribución que pueda mejorar esta aplicación.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Este proyecto está bajo la licencia MIT. Consulta el archivo LICENSE para obtener más detalles.
 
-## Learn More
+Si tienes alguna pregunta o sugerencia, no dudes en ponerte en contacto con el equipo de desarrollo en [mdgarciabenito@gmail.com].
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+¡Esperamo que disfrutes de la aplicación!
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Mariano Daniel García Benito

@@ -6,9 +6,11 @@ import Nav from 'react-bootstrap/Nav';
 const CartWidget = () => {
   return (
     <>
-    
-    <Nav.Link as={Link} to="/Cart" >
-      <img src={carrito} alt="logocarrito" width={100} />
+
+      <Nav.Link as={Link} to="/Cart" >
+        <div>
+          <img src={carrito} alt="logocarrito" width={100} />
+        </div>
       </Nav.Link>
     </>
   )

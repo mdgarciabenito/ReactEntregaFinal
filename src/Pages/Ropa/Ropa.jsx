@@ -20,14 +20,14 @@ const Ropa = () => {
             </div>
             {ropaItems.map((item) => {
                 return (
-                    <div
+                    <div key={item.id}
                         style={{
                             display: "flex",
                             flexDirection: "row",
                             justifyContent: "center",
                         }}
                     >
-                        <Link to={`/Categorias/${item.id}`}>{item.title}</Link>
+                        <Link to={`/ItemListContainer/${item.id}`}>{item.title}</Link>
                     </div>
                 );
             })}
